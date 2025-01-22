@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перечень лицензий</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1>Перечень лицензий</h1>
+    <form id="search-form" onsubmit="return false;">
+        <input type="text" id="name" placeholder="Название лицензии">
+        <input type="text" id="placement" placeholder="Размещение">
+        <input type="number" id="quantity" placeholder="Количество">
+        <button type="submit">Поиск</button>
+    </form>
+    <table id="licenses-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Название</th>
+                <th>Размещение</th>
+                <th>Количество</th>
+                <th>Номер ГК</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Результаты поиска будут добавлены здесь -->
+        </tbody>
+    </table>
+    <script src="/static/licenses_list.js"></script>
+</body>
+
+</html>

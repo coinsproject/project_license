@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта выгорания лицензий и сертификатов</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1>Карта выгорания лицензий и сертификатов</h1>
+    <button class="button" id="add-license-button">Добавить лицензию или сертификат</button>
+    <a href="/licenses-list" class="button">Перечень лицензий и сертификатов</a>
+    <a href="/burnout-map" class="button">Карта выгорания лицензий</a>
+
+    <!-- Всплывающее окно -->
+    <div class="modal" id="add-license-modal">
+        <div class="modal-header">Добавить лицензию</div>
+        <div class="modal-body">
+            <form id="license-form">
+                <input type="text" id="ownership" placeholder="Принадлежность">
+                <input type="text" id="group" placeholder="Группа">
+                <input type="text" id="manufacturer" placeholder="Производитель">
+                <input type="text" id="placement" placeholder="Размещение">
+                <input type="text" id="name" placeholder="Название лицензии" required>
+                <input type="text" id="type" placeholder="Тип">
+                <input type="number" id="quantity" placeholder="Количество">
+                <input type="text" id="contract_number" placeholder="Номер договора">
+                <input type="text" id="term" placeholder="Срок">
+                <input type="date" id="issue_date" required>
+                <input type="date" id="expiry_date" required>
+                <textarea id="notes" placeholder="Примечания"></textarea>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="close-button" id="close-modal-button">Закрыть</button>
+            <button class="button" id="save-license-button">Сохранить</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
